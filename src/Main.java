@@ -10,7 +10,6 @@ public class Main {
         }
         yaer = yaer - 2002;   // Это чтобы считывать массив с 0
         double capital = 100;
-        double k;             // Коэффициент дохода
         double indexing;
         double percent = 0;   // Процент изъятия
         int i = 1;
@@ -22,8 +21,8 @@ public class Main {
                 double inflation = (Constants.INFLATION_RATE[yaer]);
                 capital = capital - percent;
                 indexing = index2 / index1;                        // Изменение индекса в процентах
-                k = indexing - inflation / 100;
-                capital = capital * k;
+                capital = capital * indexing;
+                capital = capital * (1 - inflation / 100);
                 yaer++;
                 s++;
             }
