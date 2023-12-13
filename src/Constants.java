@@ -45,5 +45,7 @@ class Constants {
             8.39,
             11.92,
     };
-
+    public static final int START_YEAR = 2002;
+    public static final int FINAL_YEAR = 2021;
+    public static final double PERCENTAGE_CHANGE = 0.5;
 }
