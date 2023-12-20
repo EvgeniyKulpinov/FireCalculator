@@ -20,7 +20,7 @@ public class FireCalculator {
 
     public static void checkingData(int year) throws Exception {
         if (year > Constants.FINAL_YEAR | year < Constants.START_YEAR) {
-            throw new Exception("Введите дату в диапазоне 2002-2021 включительно");
+            throw new Exception("Введите дату в диапазоне " + Constants.START_YEAR + " - " + Constants.FINAL_YEAR + " включительно");
         }
     }
 
